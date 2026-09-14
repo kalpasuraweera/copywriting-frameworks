@@ -18,7 +18,7 @@ The full skill is in [`skills/copywriting-frameworks/SKILL.md`](skills/copywriti
 ## Install
 
 **Claude.ai / Claude apps**
-Upload [`copywriting-frameworks.skill`](copywriting-frameworks.skill) (or just `SKILL.md`) via **Settings → Skills**.
+Zip the [`skills/copywriting-frameworks/`](skills/copywriting-frameworks/) folder (so the zip contains `copywriting-frameworks/SKILL.md`) and upload it via **Settings → Skills**.
 
 **Claude Code**
 Copy the `skills/copywriting-frameworks/` folder into your skills directory:
