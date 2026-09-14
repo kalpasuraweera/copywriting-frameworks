@@ -1,0 +1,13 @@
+{
+  "name": "copywriting-frameworks",
+  "description": "Makes Claude think before it writes copy: Six P's, Five C's, hook/body/CTA structure, and offer framing, without inventing stats or testimonials.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kalpa Madhushan",
+    "url": "https://github.com/kalpasuraweera"
+  },
+  "homepage": "https://github.com/kalpasuraweera/copywriting-frameworks",
+  "repository": "https://github.com/kalpasuraweera/copywriting-frameworks",
+  "license": "MIT",
+  "keywords": ["copywriting", "marketing", "landing-page", "cold-email", "ads", "hooks", "cta"]
+}

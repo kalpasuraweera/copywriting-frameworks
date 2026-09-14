@@ -17,18 +17,34 @@ The full skill is in [`skills/copywriting-frameworks/SKILL.md`](skills/copywriti
 
 ## Install
 
-**Claude.ai / Claude apps**
-Zip the [`skills/copywriting-frameworks/`](skills/copywriting-frameworks/) folder (so the zip contains `copywriting-frameworks/SKILL.md`) and upload it via **Settings → Skills**.
+**Claude Code: plugin (recommended)**
 
-**Claude Code**
-Copy the folder into your skills directory:
+Run these inside Claude Code:
+
+```
+/plugin marketplace add kalpasuraweera/copywriting-frameworks
+/plugin install copywriting-frameworks@kalpasuraweera
+```
+
+To get new versions later, run `/plugin marketplace update kalpasuraweera`.
+
+**Any coding agent (Claude Code, Cursor, Codex, and more): skills CLI**
 
 ```bash
-# available in every project
-cp -r skills/copywriting-frameworks ~/.claude/skills/
+npx skills add kalpasuraweera/copywriting-frameworks
+```
 
-# or just one project
-cp -r skills/copywriting-frameworks .claude/skills/
+Add `-g` to install it for all your projects instead of just the current one.
+
+**Claude.ai / Claude apps**
+
+Download [`copywriting-frameworks.skill`](https://github.com/kalpasuraweera/copywriting-frameworks/releases/latest/download/copywriting-frameworks.skill) from the [latest release](https://github.com/kalpasuraweera/copywriting-frameworks/releases/latest) and upload it via **Settings → Skills**.
+
+**Manual**
+
+```bash
+git clone https://github.com/kalpasuraweera/copywriting-frameworks
+cp -r copywriting-frameworks/skills/copywriting-frameworks ~/.claude/skills/
 ```
 
 ## Does it actually help? Results

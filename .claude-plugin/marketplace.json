@@ -1,0 +1,23 @@
+{
+  "name": "kalpasuraweera",
+  "owner": {
+    "name": "Kalpa Madhushan",
+    "url": "https://github.com/kalpasuraweera"
+  },
+  "description": "Claude skills by Kalpa Madhushan.",
+  "plugins": [
+    {
+      "name": "copywriting-frameworks",
+      "source": "./",
+      "description": "Makes Claude think before it writes copy: Six P's, Five C's, hook/body/CTA structure, and offer framing, without inventing stats or testimonials.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kalpa Madhushan"
+      },
+      "homepage": "https://github.com/kalpasuraweera/copywriting-frameworks",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["copywriting", "marketing"]
+    }
+  ]
+}
