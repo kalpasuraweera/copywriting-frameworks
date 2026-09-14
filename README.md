@@ -65,7 +65,7 @@ Each folder has the exact prompt plus both Haiku outputs, **without** and **with
 
 ## Credit
 
-The frameworks in this skill were distilled and rewritten from **[VIDEO TITLE](VIDEO_URL)** by **[CREATOR NAME]**, a free copywriting course on YouTube. All the text in this repo is an original summary in my own words. No transcript text is reproduced. If this skill is useful to you, go watch the original.
+The frameworks in this skill were distilled and rewritten from **[How To Write Words That Make People Buy (Full Course)](https://youtu.be/OP_eMk_RCWg)** by **Jay Yang** ([@Jayyanginspires](https://x.com/Jayyanginspires) · [YouTube](https://www.youtube.com/@JayYangInspires)), a free copywriting course on YouTube. All the text in this repo is an original summary in my own words. No transcript text is reproduced. If this skill is useful to you, go watch the original.
 
 ## License
 
