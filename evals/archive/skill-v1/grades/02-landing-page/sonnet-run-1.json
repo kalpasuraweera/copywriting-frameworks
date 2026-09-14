@@ -1,0 +1,42 @@
+{
+  "test": "02-landing-page",
+  "model": "sonnet",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 4,
+      "promise_outcome": 5,
+      "hook": 4,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 3,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": 3,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 2,
+      "followed_request": false,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": false
+    },
+    "winner": "A",
+    "reason": "A delivers exactly what was asked\u2014a clean, ready-to-use hero section for the stated beginner audience\u2014while B second-guesses the brief, silently swaps the target avatar from 'beginner' to 'experienced runner,' and buries the actual copy inside a lot of unrequested meta-commentary and a framework breakdown, making it far less usable as a direct handoff."
+  },
+  "raw": null
+}

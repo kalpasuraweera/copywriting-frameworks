@@ -1,6 +1,6 @@
 # Copywriting Frameworks — a Claude Skill
 
-A skill that makes Claude think before it writes copy. Most AI copy sounds generic because it jumps straight to sentences. This skill has Claude first pin down who the reader is, what they actually get, why they should believe it, and why they should act now. Only then does it draft the hook, body, and CTA, and it edits the result for plain, human-sounding prose. It's for founders, freelancers, and marketers who write ads, landing pages, emails, and social posts and want output they can use, not rewrite.
+A skill that makes Claude think before it writes copy. Before drafting, it works out who the reader is, what they actually get, why they should believe it, and why they should act now. Only then does it write the hook, body, and CTA, in plain, human-sounding prose, without making up stats or testimonials. It's for founders, freelancers, and marketers who write ads, landing pages, emails, and social posts.
 
 ## The framework at a glance
 
@@ -8,10 +8,10 @@ A skill that makes Claude think before it writes copy. Most AI copy sounds gener
 |-------|--------------|-----------|
 | **1. Think — Six P's** | Answers the strategic questions before any writing | **People** (a specific avatar) · **Positioning** (why you over alternatives) · **Promise** (an outcome, via the "so what?" test) · **Proof** (3 tiers, strongest = a relatable client story) · **Priority** (why now, honestly) · **Process** (how it works, in one line) |
 | **2. Write — Five C's** | Sets the prose style | Clear · Concise · Concrete · Conversational · Cadence |
-| **3. Structure — Hook / Body / CTA** | Shapes the piece | Hook score ≈ benefit × relevance × credibility ÷ effort · Body as *What/Why/How* (educational) or *But/Therefore* (story) · CTA as *Who/What/When/How*, one ask only |
+| **3. Structure — Hook / Body / CTA** | Shapes the piece | Hook score ≈ benefit × relevance × credibility ÷ effort · Body as *What/Why/How* or *But/Therefore* · CTA as *Who/What/When/How*, one ask only |
 | **4. Offer framing** *(when relevant)* | Positions and prices a service | Three value levers (time, money, risk) · risk reversal · the TAG pitch (Target → Audit → Gift) |
 
-Two guardrails built in: **never invent proof** (missing results and testimonials become `[bracketed placeholders]`), and **sanity-check the offer** (it flags promises the product can't honestly keep).
+Built-in guardrails: **never invent facts** (missing proof becomes a `[placeholder]`), **finished copy first** (the framework work stays behind the scenes unless you ask for strategy), and **keep the brief's audience**.
 
 The full skill is in [`skills/copywriting-frameworks/SKILL.md`](skills/copywriting-frameworks/SKILL.md).
 
@@ -21,7 +21,7 @@ The full skill is in [`skills/copywriting-frameworks/SKILL.md`](skills/copywriti
 Zip the [`skills/copywriting-frameworks/`](skills/copywriting-frameworks/) folder (so the zip contains `copywriting-frameworks/SKILL.md`) and upload it via **Settings → Skills**.
 
 **Claude Code**
-Copy the `skills/copywriting-frameworks/` folder into your skills directory:
+Copy the folder into your skills directory:
 
 ```bash
 # available in every project
@@ -31,22 +31,37 @@ cp -r skills/copywriting-frameworks ~/.claude/skills/
 cp -r skills/copywriting-frameworks .claude/skills/
 ```
 
-Once installed, it loads automatically whenever you ask for something like "write an ad," "give me hook options," or "critique this landing page."
+## Does it actually help? Results
+
+Six copywriting prompts were each run on **Claude Haiku 4.5** twice: once without the skill and once with it. **Claude Sonnet 5** then judged each pair blind. It saw two unlabeled outputs in random order and didn't know which one used the skill.
+
+| | Without skill | With skill |
+|---|---|---|
+| Head-to-head wins | 0 | **6** |
+| "Usable as-is" (1–5, judge) | 3.00 | **4.17** |
+| Invented facts per output (avg) | 1.17 | **0.50** |
+| Followed the request | 100% | 100% |
+
+Full scores and the judge's reasoning for each test are in [`results/summary.md`](results/summary.md). The harness, rubric, and raw outputs are in [`evals/`](evals/).
+
+**Read these numbers with care:**
+- **Small sample.** One run per prompt, one model, one judge model. Treat it as a signal, not proof.
+- **Second version, tuned on the same prompts.** The first version of the skill won 5 of 6 on Haiku but only 1 of 4 in a partial Sonnet run. It buried the copy under framework notes and changed the audience in one brief. Those results and the fixes are in [`evals/archive/skill-v1/`](evals/archive/skill-v1/). The current skill was revised using these same 6 prompts, so part of the gain may not carry over to other prompts.
+- **It still invents some things.** Fewer than without the skill, but not zero. Examples: "18 months" of runway in the cold email, and a "$2M/year" headline in the bookkeeping ad. Check numbers before you use the copy.
+- **Test 5 uses fictional copy.** The copy being critiqued is a made-up SaaS paragraph.
 
 ## Examples
 
-Each folder has the exact prompt (`prompt.md`) and the skill's full response (`output.md`).
+Each folder has the exact prompt plus both Haiku outputs, **without** and **with** the skill.
 
-| Example | What it shows |
-|---------|---------------|
-| [01 — Hook options](examples/01-hook-options/) | Five Twitter thread hooks for a meal-kit brand, built around the "5:47pm, nothing's defrosted" moment busy parents know, and scored with the hook formula. |
-| [02 — Landing page hero](examples/02-landing-page/) | A marathon plan's hero section. The skill first flags that "6 weeks to a marathon" is unsafe for true beginners, then repositions the page honestly. |
-| [03 — Cold email](examples/03-cold-email/) | A pitch to a newly funded founder using Target → Audit → Gift. The email leads with a free homepage rewrite instead of "I write great copy." |
-| [04 — CTA rewrite](examples/04-cta-rewrite/) | Why "Feel free to reach out anytime" fails all four CTA checks, plus rewrites for services, software, and newsletters. |
-| [05 — Copy critique](examples/05-copy-critique/) | A typical buzzword-heavy SaaS paragraph, diagnosed down to one root cause (no specific reader) and rewritten as "Know what's late before your client does." |
-| [06 — Offer positioning](examples/06-offer-positioning/) | Six P's for a $3k/month e-commerce bookkeeping service, plus a sample ad that opens with "Shopify says you made money last month. Your bank account disagrees." |
-
-Proof and product details the prompts didn't provide are left as `[placeholders]` on purpose. The skill is designed not to invent them.
+| Example | What changed with the skill |
+|---------|-----------------------------|
+| [01 — Hook options](examples/01-hook-options/) | Without the skill, the hooks stated made-up stats ("8+ hours a week", "we asked 500 parents"). With it, the hooks are built on the parent's real evening, and the one number is flagged as needing real data. |
+| [02 — Landing page hero](examples/02-landing-page/) | Without the skill, it invented a coach who "trained 5,000+ first-time marathoners". With it, the hero section is honest and has no invented credentials. |
+| [03 — Cold email](examples/03-cold-email/) | Without the skill: a template-like email with bolded subheads. With it: an email written around the founder's runway and ad spend. |
+| [04 — CTA rewrite](examples/04-cta-rewrite/) | Without the skill: five fill-in-the-blank templates. With it: one ready-to-use CTA plus variants for other offer types. |
+| [05 — Copy critique](examples/05-copy-critique/) | Both spot the vague promise. With the skill, the critique traces it to the root cause (no specific reader) and gives a concrete next step. |
+| [06 — Offer positioning](examples/06-offer-positioning/) | Without the skill, the ad claimed "we fixed this for 47 Shopify/Amazon sellers in 2025". With it, the Six P's and the ad make no invented claims. |
 
 ## Credit
 

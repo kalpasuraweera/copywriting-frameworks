@@ -1,0 +1,45 @@
+{
+  "test": "03-cold-email",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 4,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": 3,
+      "cta": 4,
+      "sounds_human": 3,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 5,
+      "promise_outcome": 5,
+      "hook": 4,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 5,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 2,
+      "invented_facts_examples": [
+        "You have runway now, and 18 months to prove unit economics.",
+        "A 5% improvement in conversion on your outbound or ad spend is a month of runway back."
+      ],
+      "length_ok": true
+    },
+    "winner": "B",
+    "reason": "B reads like a real, specific email from a person who understands a founder's world (runway, unit economics, ad spend) with a natural conversational flow and a low-pressure close, while A leans on bolded subheads and generic copywriter clich\u00e9s that feel more like a template; B's edge does come with a couple of unverified specific numbers the founder should double-check before sending."
+  },
+  "raw": null
+}

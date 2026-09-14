@@ -1,0 +1,42 @@
+{
+  "test": "05-copy-critique",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": null,
+      "promise_outcome": null,
+      "hook": 3,
+      "body_shape": 4,
+      "cta": 3,
+      "sounds_human": 4,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": null,
+      "promise_outcome": null,
+      "hook": 4,
+      "body_shape": 5,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 5,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "winner": "B",
+    "reason": "B nails the single root cause ('no promise') and shows the diagnostic 'so what?' test that ties audience, proof, urgency, and differentiation back to it, giving the requester a reusable way to think about the fix, whereas A's diagnosis ('vague benefits') is accurate but more generic and less unifying."
+  },
+  "raw": null
+}

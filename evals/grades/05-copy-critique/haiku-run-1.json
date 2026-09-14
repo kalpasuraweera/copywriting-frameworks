@@ -1,0 +1,42 @@
+{
+  "test": "05-copy-critique",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 3,
+      "promise_outcome": 4,
+      "hook": null,
+      "body_shape": 4,
+      "cta": 2,
+      "sounds_human": 4,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 5,
+      "promise_outcome": 4,
+      "hook": null,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 5,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "winner": "B",
+    "reason": "B pinpoints the root cause more precisely \u2014 no defined avatar, which is why the promise, hook, and proof all feel generic \u2014 and cleanly separates that primary fix from secondary issues, ending with a concrete next question the requester can act on; A's advice is solid but blends the fix and the proof point together and stops short of a clear next step."
+  },
+  "raw": null
+}

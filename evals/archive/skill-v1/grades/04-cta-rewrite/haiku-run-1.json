@@ -1,0 +1,42 @@
+{
+  "test": "04-cta-rewrite",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 3,
+      "promise_outcome": 3,
+      "hook": 3,
+      "body_shape": 3,
+      "cta": 3,
+      "sounds_human": 2,
+      "usable_as_is": 2,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 4,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 3,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "winner": "B",
+    "reason": "B diagnoses the CTA's flaws more precisely (Who/What/When/How), delivers one fully ready-to-use rewrite alongside contextual options, and reads like an actual copywriter's voice rather than A's generic checklist-and-emoji listicle."
+  },
+  "raw": null
+}

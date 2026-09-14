@@ -1,0 +1,42 @@
+{
+  "test": "03-cold-email",
+  "model": "sonnet",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "with-skill",
+    "B": "without-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 5,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": 4,
+      "cta": 5,
+      "sounds_human": 4,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 4,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": 3,
+      "cta": 3,
+      "sounds_human": 3,
+      "usable_as_is": 3,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "winner": "A",
+    "reason": "A's email reads cleanly with no grammatical errors, keeps a single disciplined CTA (and explicitly warns against diluting it), and pairs the draft with a sharper strategic breakdown, while B's opening line contains an awkward, broken sentence and stacks two asks (free teardown + call) that muddy the CTA."
+  },
+  "raw": null
+}

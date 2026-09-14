@@ -1,0 +1,49 @@
+{
+  "test": "01-hook-options",
+  "model": "sonnet",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 4,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": null,
+      "cta": null,
+      "sounds_human": 4,
+      "usable_as_is": 3,
+      "followed_request": true,
+      "invented_facts": 4,
+      "invented_facts_examples": [
+        "10,000+ busy parents",
+        "22 minutes flat",
+        "The average parent spends 37 minutes deciding what to cook"
+      ],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 4,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": null,
+      "cta": null,
+      "sounds_human": 3,
+      "usable_as_is": 3,
+      "followed_request": true,
+      "invented_facts": 2,
+      "invented_facts_examples": [
+        "I used to spend 45 minutes a night just deciding what's for dinner",
+        "We fed our family takeout 4 nights a week for a year"
+      ],
+      "length_ok": true
+    },
+    "winner": "A",
+    "reason": "A delivers five punchy, ready-to-tweet hooks with a natural voice and minimal extra clutter, while B's hooks are solid but buried under rubric-style annotations that would need stripping before posting, making A the more immediately usable deliverable despite both containing a few unverified stats."
+  },
+  "raw": null
+}

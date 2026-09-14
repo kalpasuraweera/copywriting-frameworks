@@ -1,0 +1,61 @@
+{
+  "test": "06-offer-positioning",
+  "model_alias": "haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "condition": "with-skill",
+  "sample": 1,
+  "skill_sha256": "069b7b1b5917",
+  "git_commit": "f45c929",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 3352,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 4556,
+    "output_tokens_details": {
+      "thinking_tokens": 3775
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 3352,
+        "output_tokens": 4556,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "modelUsage": {
+    "claude-haiku-4-5-20251001": {
+      "inputTokens": 4284,
+      "outputTokens": 4575,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.027159000000000003,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 3775,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "duration_ms": 47687,
+  "timestamp": "2026-09-14T13:46:55"
+}

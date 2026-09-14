@@ -1,0 +1,45 @@
+{
+  "test": "02-landing-page",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "with-skill",
+    "B": "without-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 5,
+      "promise_outcome": 5,
+      "hook": 5,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 3,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": 3,
+      "cta": 4,
+      "sounds_human": 3,
+      "usable_as_is": 2,
+      "followed_request": true,
+      "invented_facts": 2,
+      "invented_facts_examples": [
+        "a certified coach who's trained 5,000+ first-time marathoners across the finish line",
+        "Our proven 6-week program"
+      ],
+      "length_ok": true
+    },
+    "winner": "A",
+    "reason": "A delivers a sharper, more specific avatar and hook without fabricating any credibility claims, honestly flagging where proof needs to be added; B invents a specific coach credential and a '5,000+ marathoners' stat presented as fact, which the requester would have to strip or fact-check before using."
+  },
+  "raw": null
+}

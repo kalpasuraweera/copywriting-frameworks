@@ -1,0 +1,44 @@
+{
+  "test": "04-cta-rewrite",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 3,
+      "promise_outcome": 3,
+      "hook": 3,
+      "body_shape": 3,
+      "cta": 3,
+      "sounds_human": 2,
+      "usable_as_is": 3,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 3,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 1,
+      "invented_facts_examples": [
+        "Schedule your free strategy call this week."
+      ],
+      "length_ok": true
+    },
+    "winner": "B",
+    "reason": "B leads with one concrete, ready-to-use rewrite backed by a tight 'why it works' breakdown, reads far more human, and still offers variants plus a clarifying question \u2014 whereas A is a bracket-heavy checklist of five templates that feels more like a copywriting lecture than a polished CTA."
+  },
+  "raw": null
+}

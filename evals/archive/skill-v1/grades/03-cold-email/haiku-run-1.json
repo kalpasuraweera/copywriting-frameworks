@@ -1,0 +1,44 @@
+{
+  "test": "03-cold-email",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 3,
+      "promise_outcome": 4,
+      "hook": 3,
+      "body_shape": 3,
+      "cta": 4,
+      "sounds_human": 3,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 4,
+      "promise_outcome": 4,
+      "hook": 3,
+      "body_shape": 4,
+      "cta": 3,
+      "sounds_human": 4,
+      "usable_as_is": 2,
+      "followed_request": false,
+      "invented_facts": 1,
+      "invented_facts_examples": [
+        "moved from 8 qualified leads per 100 visitors to 15 in the first month post-reposition"
+      ],
+      "length_ok": false
+    },
+    "winner": "A",
+    "reason": "A delivers exactly what was asked\u2014a single, ready-to-send cold email with a clear structure and CTA\u2014while B buries a solid email inside a much longer strategy document (personas, hook-scoring, rationale) that the requester didn't ask for and would have to dig through and heavily customize before use."
+  },
+  "raw": null
+}

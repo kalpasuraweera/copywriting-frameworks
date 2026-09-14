@@ -1,0 +1,42 @@
+{
+  "test": "04-cta-rewrite",
+  "model": "sonnet",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "with-skill",
+    "B": "without-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 2,
+      "promise_outcome": 3,
+      "hook": null,
+      "body_shape": 3,
+      "cta": 3,
+      "sounds_human": 4,
+      "usable_as_is": 3,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 2,
+      "promise_outcome": 4,
+      "hook": null,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "winner": "B",
+    "reason": "B delivers more ready-to-use, varied CTA options with tighter copy and a clear explanation of principles, while A spends more space on diagnostic framework than actual usable rewrites."
+  },
+  "raw": null
+}

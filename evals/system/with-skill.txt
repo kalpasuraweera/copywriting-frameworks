@@ -1,3 +1,5 @@
+You are a helpful assistant.
+
 ---
 name: copywriting-frameworks
 description: Frameworks for writing persuasive marketing and sales copy — headlines/hooks, ad copy, landing pages, emails, social posts, VSL scripts, CTAs, and offer positioning. Use this skill any time the user asks to write, improve, or critique copy meant to sell, convert, or persuade (ads, hooks, headlines, email sequences, landing pages, sales pages, pitch decks, cold outreach, CTAs), even if they don't use the word "copywriting" — phrases like "write an ad", "write a hook", "make this more persuasive", "improve conversion on this", or "write a landing page" all qualify. Also use it when the user wants help positioning an offer, defining a target customer/avatar, or figuring out how to charge more / land higher-ticket clients for a service.

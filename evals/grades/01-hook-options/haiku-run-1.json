@@ -1,0 +1,45 @@
+{
+  "test": "01-hook-options",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "without-skill",
+    "B": "with-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 4,
+      "promise_outcome": 4,
+      "hook": 3,
+      "body_shape": null,
+      "cta": null,
+      "sounds_human": 3,
+      "usable_as_is": 3,
+      "followed_request": true,
+      "invented_facts": 2,
+      "invented_facts_examples": [
+        "Busy parents spend an avg of 8+ hours a week on meal planning & grocery shopping. That's 416 hours a year",
+        "We asked 500 parents 'what would make dinnertime less stressful?' Their #1 answer surprised us"
+      ],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 5,
+      "promise_outcome": 5,
+      "hook": 4,
+      "body_shape": null,
+      "cta": null,
+      "sounds_human": 4,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "winner": "B",
+    "reason": "B's hooks are more concrete and specific without presenting fabricated stats as fact\u2014its one made-up dollar figure is explicitly flagged as an assumption to swap for real data, whereas A states two invented statistics ('8+ hours a week,' 'we asked 500 parents') as if true, which a copywriter would have to strip out before use."
+  },
+  "raw": null
+}

@@ -1,0 +1,46 @@
+{
+  "test": "06-offer-positioning",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "with-skill",
+    "B": "without-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 5,
+      "promise_outcome": 5,
+      "hook": 5,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 5,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 3,
+      "promise_outcome": 4,
+      "hook": 3,
+      "body_shape": 3,
+      "cta": 4,
+      "sounds_human": 3,
+      "usable_as_is": 2,
+      "followed_request": true,
+      "invented_facts": 3,
+      "invented_facts_examples": [
+        "We fixed this for 47 Shopify/Amazon sellers in 2025.",
+        "I found out 40% of my revenue was unprofitable",
+        "Case studies showing clients who recovered 5+ hours/month"
+      ],
+      "length_ok": true
+    },
+    "winner": "A",
+    "reason": "Output A delivers a clean, usable framework and ad with no fabricated claims, clearly flagging where the client needs to supply real proof, while Output B's sample ad states a specific, unverified statistic ('47 sellers in 2025') and invented testimonial as if true, which a copywriter would have to strip out before it could ever run."
+  },
+  "raw": null
+}

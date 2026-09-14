@@ -1,0 +1,45 @@
+{
+  "test": "02-landing-page",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "with-skill",
+    "B": "without-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 4,
+      "promise_outcome": 5,
+      "hook": 4,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 5,
+      "usable_as_is": 4,
+      "followed_request": true,
+      "invented_facts": 0,
+      "invented_facts_examples": [],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 2,
+      "promise_outcome": 3,
+      "hook": 4,
+      "body_shape": 2,
+      "cta": 4,
+      "sounds_human": 3,
+      "usable_as_is": 2,
+      "followed_request": true,
+      "invented_facts": 2,
+      "invented_facts_examples": [
+        "a certified coach who's trained 5,000+ first-time marathoners across the finish line",
+        "Join 2,000+ marathoners who trained with our program"
+      ],
+      "length_ok": true
+    },
+    "winner": "A",
+    "reason": "A delivers a tight, honest, conversational hero section with no fabricated credentials, while B fabricates a coach's track record and a social-proof stat that the requester never supplied, making it riskier to use as-is."
+  },
+  "raw": null
+}

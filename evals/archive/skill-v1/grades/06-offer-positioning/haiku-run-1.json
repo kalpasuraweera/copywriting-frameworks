@@ -1,0 +1,47 @@
+{
+  "test": "06-offer-positioning",
+  "model": "haiku",
+  "sample": 1,
+  "judge": "claude-sonnet-5",
+  "key": {
+    "A": "with-skill",
+    "B": "without-skill"
+  },
+  "valid": true,
+  "grades": {
+    "A": {
+      "avatar": 4,
+      "promise_outcome": 4,
+      "hook": 4,
+      "body_shape": 4,
+      "cta": 4,
+      "sounds_human": 4,
+      "usable_as_is": 3,
+      "followed_request": true,
+      "invented_facts": 1,
+      "invented_facts_examples": [
+        "We work with 1\u20132 new brands per month"
+      ],
+      "length_ok": true
+    },
+    "B": {
+      "avatar": 4,
+      "promise_outcome": 3,
+      "hook": 4,
+      "body_shape": 3,
+      "cta": 3,
+      "sounds_human": 4,
+      "usable_as_is": 2,
+      "followed_request": true,
+      "invented_facts": 2,
+      "invented_facts_examples": [
+        "We fixed this for 47 Shopify/Amazon sellers in 2025.",
+        "\"I found out 40% of my revenue was unprofitable\""
+      ],
+      "length_ok": true
+    },
+    "winner": "A",
+    "reason": "A is just as sharp and punchy as B but is honest about what it doesn't know (flagging proof as '???' and asking for real results), while B fabricates a specific statistic ('47 Shopify/Amazon sellers in 2025') directly in the ad copy, which is a false claim the business owner couldn't actually run without lying to prospects."
+  },
+  "raw": null
+}
